@@ -16,3 +16,12 @@ h6 {
 .partrick {
   font-family: "Patrick Hand", cursive;
 }
+
+.floatTextShadow {
+  box-shadow: 0 9px 30px 0 #fd331d33;
+}
+@media (max-width: 991px) {
+  .floatTextShadow {
+    box-shadow: 0 3px 8px 0 #fd331d33;
+  }
+}
