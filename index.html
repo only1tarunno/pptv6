@@ -10,6 +10,8 @@
 
     <!-- tainwind cdn  -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- flowbite  -->
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
 
     <!-- custom css  -->
     <link rel="stylesheet" href="./css/style.css">
@@ -19,7 +21,7 @@
 
 <body>
     <!-- hero start here  -->
-    <section class="py-5">
+    <section class="py-5 bg-[url('../img/hero_bg.png')] bg-center bg-no-repeat bg-cover">
         <div class="container mx-auto px-4">
             <div class="flex items-center justify-center gap-1 sm:gap-2 lg:gap-5">
                 <h3 class="font-bold text-[#0D6FFF] text-[10px] sm:text-sm lg:text-[22px]">Achieve Top Trading Success
@@ -38,9 +40,9 @@
                     <p class="text-[10px] sm:text-[17px] text-[#3D5476]">Your Last Stop for Real Trading Results</p>
                 </div>
             </div>
-            <div class="flex flex-col lg:flex-row gap-5 items-center justify-center mt-4">
+            <div class="flex flex-col lg:flex-row lg:gap-5 items-center justify-center mt-4">
                 <div class="w-full lg:w-[58%] xl:w-[50%] 2xl:w-[58%]">
-                    <h1 class="font-bold text-center lg:text-start text-5xl lg:text-6xl 2xl:text-8xl text-[#3D5476]">
+                    <h1 class="font-bold text-center lg:text-start text-[40px] leading-tight lg:text-6xl 2xl:text-8xl text-[#3D5476]">
                         Trading is Simple.. <br> <span class="text-[#0D6FFF]">When you know</span>
                         <br>What you're doing
                     </h1>
@@ -51,17 +53,62 @@
                         time.</span></p>
                 </div>
                 <div class="w-full lg:w-[40%] relative">
-                    <img src="./img/hero-img-desk.png" class="" alt="">
+                    <img src="./img/hero-img-desk.png" class="hidden lg:block" alt="">
+                    <img src="./img/hero-img-mobile.png" class="lg:hidden block mx-auto" alt="">
                     <!-- arrow img  -->
                      <img src="./img/hero-desk-arr.png" class="hidden lg:block w-[108px] absolute top-[30%] 2xl:top-[38%] -left-[20%] 2xl:-left-[15%]" alt="">
-                     <img src="./img/hero-desk-arr-2.png" class="hidden lg:block lg:w-20 2xl:w-[108px] absolute -bottom-[10%] xl:-bottom-[5%] -left-[18%] 2xl:-left-[15%]" alt="">
+                </div>
+                <div class="relative">
+                    <p class="text-[15px] text-[#3D5476] text-center font-light mt-[14px] lg:hidden block">
+                        <span class="font-semibold">Start Trading
+                            Like the Top 1%.</span> Get access to <span class="font-semibold">proven strategies</span> for repeatable
+                        profits and
+                        elite-level trade ideas that
+                        transform <span class="font-semibold">guesswork into precision.</span> Master the art of informed, strategic
+                        decisions - and
+                        trade <span class="font-semibold">with confidence every
+                            time.</span>
+                        
+                    </p>
+                    
                 </div>
             </div>
-            <div class="mt-10">
-                <img src="./img/herovideo.png" class="mx-auto max-w-5xl" alt="">
+            <div class="mt-10 mx-auto max-w-[380px] lg:max-w-[1150px] pt-8 pb-5 lg:pt-24 lg:pb-8 lg:px-16 dropshadow rounded-xl relative">
+                <div class="mx-auto max-w-[255px] lg:max-w-[790px] text-center relative">
+                    <h2 class="uppercase text-xl lg:text-[62px] leading-tight text-[#b2bbc6] font-bold">Trading is <span class="text-[#b6d4ff]">Simple..</span>
+                        When you understand <span class="text-[#b6d4ff]">how it works</span>
+                     </h2>
+                      <div class="max-w-[134px] lg:max-w-[410px] mx-auto">
+                        <img src="./img/herovideo.png" class="w-full" alt="">
+                      </div>
+                    <!-- Modal toggle -->
+                    <button data-modal-target="default-modal" data-modal-toggle="default-modal"
+                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                        type="button">
+                        <img src="./img/playbtn.png" class="w-12 lg:w-36" alt="">
+                    </button>
+                    
+                    <!-- Main modal -->
+                    <div id="default-modal" tabindex="-1" aria-hidden="true"
+                        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                        <div class="relative p-4 w-full max-w-2xl max-h-full">
+                            <!-- Modal content -->
+                        <iframe class="w-full h-[220px] sm:h-[350px]" src="https://www.youtube.com/embed/668nUCeBHyY?si=hkmPp3viUHqf3SPv"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                </div>
+                <img src="./img/hero-desk-arr-2.png" class="w-10 lg:w-20 2xl:w-[108px] absolute -top-[17%] left-[15%] lg:-top-[14%] lg:left-[52%] xl:-top-[12%] xl:left-[50%] 2xl:-top-[18%] 2xl:left-[53%]" alt="">
             </div>
         </div>
     </section>
+
+
+    <!-- js  -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 </body>
 
 </html>
