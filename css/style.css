@@ -52,6 +52,16 @@ h6 {
     rgba(255, 255, 255, 1) 100%
   );
 }
+.contactForm input,
+.contactForm input:focus {
+  border: 0;
+  border-bottom: 1px solid #c4d1e3;
+  box-shadow: none;
+  padding: 0 0 7px 7px;
+}
+.contactForm input::placeholder {
+  font-style: italic;
+}
 @media (max-width: 1279px) {
   .bottombar::after {
     height: 100px;
