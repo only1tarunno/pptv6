@@ -65,9 +65,37 @@ h6 {
 .progressshadow {
   box-shadow: 0px 3px 7px 0px #0d6fff33;
 }
+.active-tab {
+  color: #0d6fff;
+  background-color: #fff;
+  box-shadow: 0 2px 10px 0 #0d6eff2f;
+}
+.inactive-tab {
+  color: #3d5476;
+  background-color: transparent;
+  box-shadow: none;
+}
+.active-tab .dash-bar {
+  display: block;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  margin-left: 27px;
+}
+
+.accordion-content.open {
+  max-height: 200px; /* Adjust based on content height */
+  margin-left: 27px;
+}
 @media (max-width: 1279px) {
   .bottombar::after {
     height: 100px;
+  }
+  .active-tab .dash-bar {
+    display: none;
   }
 }
 @media (max-width: 991px) {
