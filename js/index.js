@@ -36,3 +36,8 @@ function toggleAccordion(element) {
         content.classList.add('open');
     }
 }
+
+ // Get the current year and insert it into the span with the id 'year'
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    
