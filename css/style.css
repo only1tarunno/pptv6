@@ -92,48 +92,21 @@ h6 {
 }
 #scroll-text {
   height: 100%;
-  /* animation properties */
-  -moz-transform: translateY(-100%);
-  -webkit-transform: translateY(-100%);
-  transform: translateY(-100%);
-
-  -moz-animation: my-animation 5s linear infinite;
-  -webkit-animation: my-animation 5s linear infinite;
-  animation: my-animation 5s linear infinite;
+  /* Animation properties */
+  transform: translateY(100%);
+  animation: my-animation 15s linear infinite;
 }
 
-/* for Firefox */
-@-moz-keyframes my-animation {
-  from {
-    -moz-transform: translateY(100%);
-  }
-  to {
-    -moz-transform: translateY(-100%);
-  }
-}
-
-/* for Chrome */
-@-webkit-keyframes my-animation {
-  from {
-    -webkit-transform: translateY(100%);
-  }
-  to {
-    -webkit-transform: translateY(-100%);
-  }
-}
-
+/* Keyframes for the animation */
 @keyframes my-animation {
-  from {
-    -moz-transform: translateY(100%);
-    -webkit-transform: translateY(100%);
-    transform: translateY(100%);
+  0% {
+    transform: translateY(100%); /* Start from the bottom */
   }
-  to {
-    -moz-transform: translateY(-100%);
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%);
+  100% {
+    transform: translateY(-100%); /* Move to the top */
   }
 }
+
 @media (max-width: 1279px) {
   .bottombar::after {
     height: 100px;
