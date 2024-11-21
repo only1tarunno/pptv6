@@ -94,7 +94,7 @@ h6 {
   height: 100%;
   /* Animation properties */
   transform: translateY(100%);
-  animation: my-animation 8s linear infinite;
+  animation: my-animation 15s linear infinite;
 }
 
 /* Keyframes for continuous looping */
@@ -102,14 +102,17 @@ h6 {
   0% {
     transform: translateY(100%); /* Start from the bottom */
   }
-  33% {
+  25% {
     transform: translateY(0); /* Move to the middle */
   }
-  66% {
+  50% {
     transform: translateY(-100%); /* Move to the top */
   }
-  100% {
+  75% {
     transform: translateY(-200%); /* Move past the top and loop */
+  }
+  100% {
+    transform: translateY(-300%); /* Move past the top and loop */
   }
 }
 
