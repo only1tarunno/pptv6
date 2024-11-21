@@ -32,7 +32,7 @@
             <div class="flex items-center justify-center gap-1 sm:gap-2 lg:gap-5">
                 <h3 class="font-bold text-[#0D6FFF] text-[10px] sm:text-sm lg:text-[16px] 2xl:text-[22px]">Achieve Top Trading Success
                     with Peak Performance Trading</h3>
-                <button
+                <button data-modal-target="contact-modal" data-modal-toggle="contact-modal"
                     class="flex items-center justify-center gap-2 text-[10px] sm:text-sm lg:text-[16px] 2xl:text-[22px] font-medium text-[#0D6FFF] bg-[#E7F1FF] hover:bg-[#83a9dd] py-1 lg:py-2 px-2 lg:px-3 rounded-lg flex-shrink-0">
                     <img src="./img/hero/chat.png" class="w-[10px] sm:w-4 lg:w-6" alt=""> <span>Let's Talk !</span>
                 </button>
@@ -1514,6 +1514,101 @@
             Unauthorized use or reproduction of any content or materials is strictly prohibited.</p>
         </div>
      </footer>
+
+
+    <!-- contact modal -->
+    <div id="contact-modal" tabindex="-1" aria-hidden="true"
+        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative p-4 w-full max-w-full lg:max-w-[90%] xl:max-w-[1024px] 2xl:max-w-[1387px]  max-h-full">
+            <!-- Modal content -->
+            <div class="relative bg-white rounded-lg xl:rounded-[42px] 2xl:rounded-[60px] p-[45px] lg:[50px] 2xl:p-[70px] ">
+                <div class="flex flex-col lg:flex-row items-center gap-[35px] lg:gap-[45px] 2xl:gap-[60px] justify-between">
+                    <div class="flex-1">
+                        <h3
+                            class="text-center lg:text-start text-[#0D6FFF] text-[28px] lg:text-[44px] 2xl:text-[60px] font-normal">
+                            Profit-Session</h3>
+                        <p
+                            class="text-center lg:text-start text-[#3D5476] uppercase text-[12px] lg:text-[17px] 2xl:text-[24px]">
+                            15 min</p>
+                        <div class=" pt-[10px] lg:pt-[22px] 2xl:pt-[30px] text-[#3D5476]">
+                            <p
+                                class="text-[15px] lg:text-[18px] xl:text-[20px] 2xl:text-[28px] mb-2 lg:mb-3 text-center lg:text-start">
+                                Unlock your full potential with our <span class="font-bold">free Profit Session.</span>
+                                We'll explore the challenges you've faced and review your
+                                strategy. Together, we'll <span class="font-bold">help you towards profitability,</span>
+                                giving you <span class="font-bold">clear steps to improve.</span> This session offers you a
+                                chance to gain valuable insights and <span class="font-bold">enhance your trading, all
+                                    risk-free and at no cost.</span> Start your journey to trading
+                                success with us today!
+                            </p>
+                            <ul class="space-y-2 2xl:space-y-3 text-[15px] lg:text-[16px] 2xl:text-[22px]">
+                                <li class="flex items-center gap-3 lg:gap-4">
+                                    <span><img src="./img/contact/check.png" class="w-[12px] 2xl:w-[17px]" alt=""></span>
+                                    <span class="flex-1">Open-minded and self-aware</span>
+                                </li>
+                                <li class="flex items-center gap-3 lg:gap-4">
+                                    <span><img src="./img/contact/check.png" class="w-[12px] 2xl:w-[17px]" alt=""></span>
+                                    <span class="flex-1">Qualified for cooperation</span>
+                                </li>
+                                <li class="flex items-center gap-3 lg:gap-4">
+                                    <span><img src="./img/contact/check.png" class="w-[12px] 2xl:w-[17px]" alt=""></span>
+                                    <span class="flex-1">Prepared and ready to go</span>
+                                </li>
+                                <li class="flex items-center gap-3 lg:gap-4">
+                                    <span><img src="./img/contact/check.png" class="w-[12px] 2xl:w-[17px]" alt=""></span>
+                                    <span class="flex-1">Knowledgeable about your strategy</span>
+                                </li>
+    
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-[250px] lg:w-[30%] 2xl:w-[28%]">
+                        <p class="text-center text-[#3D5476] text-[20px] 2xl:text-[28px]">Where do you want to start your
+                            session?</p>
+                        <div
+                            class="max-w-[186px]  2xl:max-w-[250px] mx-auto space-y-3 2xl:space-y-4 pt-[22px] 2xl:pt-[30px] pb-[30px] 2xl:pb-[50px]">
+                            <a href="#"
+                                class="flex items-center justify-center gap-2 2xl:gap-[10px] bg-[#25D366] hover:bg-[#1c6437] rounded-[30px] h-[45px] 2xl:h-[60px] w-full">
+                                <span><img src="./img/contact/whatsapp.png" class="w-[18px] 2xl:w-[25px]" alt=""></span>
+                                <span class="text-white text-[16px] 2xl:text-[22px]">On Whatsapp</span>
+                            </a>
+                            <a href="#"
+                                class="flex items-center justify-center gap-2 2xl:gap-[10px] bg-[#278BDC] hover:bg-[#275a85] rounded-[30px] h-[45px] 2xl:h-[60px] w-full">
+                                <span><img src="./img/contact/instagram.png" class="w-[18px] 2xl:w-[25px]" alt=""></span>
+                                <span class="text-white text-[16px] 2xl:text-[22px]">On Whatsapp</span>
+                            </a>
+                        </div>
+                        <div class="relative">
+                            <div
+                                class="flex items-center gap-3 2xl:gap-4 bg-white progressshadow px-[20px] xl:px-[28px]  py-3 lg:py-[18px] rounded-xl relative z-10">
+                                <div class="w-[43px] lg:w-[50px] 2xl:w-[68px]">
+                                    <img src="./img/contact/steven.png" class="w-full" alt="">
+                                </div>
+                                <div class="font-light text-[#3D5476]">
+                                    <h4 class="text-[16px] lg:text-[27px] 2xl:text-[37px]">Steven</h4>
+                                    <p class="text-[12px] 2xl:text-[17px]">Peak Performance Trading</p>
+                                </div>
+                            </div>
+                            <!-- arrow  -->
+                            <div
+                                class="absolute left-[-18%] xl:left-[-15%] top-[-100px] lg:top-[-98px] 2xl:top-[-134px] w-[70px] lg:w-[70px] 2xl:w-[90px] ">
+                                <img src="./img/contact/desk-arr.png" class="w-full" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <button type="button"
+                    class="bg-white w-12 h-12 2xl:w-16 2xl:h-12 flex items-center justify-center rounded-[10px] closeshadow absolute top-3 right-3 lg:top-8 lg:right-7 2xl:top-10 2xl:right-10"
+                    data-modal-hide="contact-modal">
+                    <img src="./img/contact/close.png" class="w-[18px] 2xl:w-[25px]" alt="">
+                    <span class="sr-only">Close modal</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
 
     <!-- js  -->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>

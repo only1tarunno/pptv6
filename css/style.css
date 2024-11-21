@@ -115,7 +115,9 @@ h6 {
     transform: translateY(-300%); /* Move past the top and loop */
   }
 }
-
+.closeshadow {
+  box-shadow: 0 0 4px 0 #00468333;
+}
 @media (max-width: 1279px) {
   .bottombar::after {
     height: 100px;
